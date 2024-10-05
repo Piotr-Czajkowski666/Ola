@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Psychologa</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+        }
+        .profile-image {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        main {
+            padding: 2em;
+        }
+        section {
+            display: none;
+            margin-bottom: 2em;
+        }
+        section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .contact-details {
+            flex: 1;
+            padding-right: 1em;
+        }
+        .map-container {
+            flex: 1;
+        }
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="profile.jpg" alt="Zdjęcie profilowe" class="profile-image">
+        <h1>Mgr. Aleksandra Szczygieł</h1>
+    </header>
+    <nav>
+        <a onclick="showSection('portfolio')">Portfolio</a>
+        <a onclick="showSection('blog')">Blog</a>
+        <a onclick="showSection('contact')">Kontakt</a>
+    </nav>
+    <main>
+        <section class="portfolio-section" id="portfolio">
+            <h2>Portfolio</h2>
+            <ul>
+                <li>
+                    <h3>Specjalizacje i Obszary Pracy</h3>
+                    <p><strong>Terapia indywidualna i grupowa:</strong> Praca z dziećmi (5-12 lat) z problemami emocjonalnymi, adaptacyjnymi i społecznymi.</p>
+                    <p><strong>Wsparcie dla dzieci z zaburzeniami lękowymi:</strong> Pomoc dzieciom z lękami separacyjnymi, społecznymi oraz fobiami.</p>
+                    <p><strong>Rozwój emocjonalny dzieci:</strong> Warsztaty dla dzieci w wieku przedszkolnym, pomagające im lepiej rozpoznawać i wyrażać emocje.</p>
+                </li>
+                <li>
+                    <h3>Case Studies</h3>
+                    <p><strong>Przypadek Anki (7 lat):</strong> Pomoc w przezwyciężaniu lęków przed szkołą i rówieśnikami poprzez indywidualną terapię.</p>
+                    <p><strong>Przypadek Karola (10 lat):</strong> Terapia wspomagająca koncentrację i radzenie sobie z nadpobudliwością.</p>
+                    <p><strong>Przypadek Oli (6 lat):</strong> Praca nad kontrolą agresji i budowaniem pozytywnych relacji z rówieśnikami.</p>
+                </li>
+                <li>
+                    <h3>Projekty Warsztatowe</h3>
+                    <p><strong>Warsztaty "Radzenie sobie ze stresem":</strong> Warsztaty dla dzieci (8-12 lat) uczące, jak rozpoznawać i zarządzać stresem.</p>
+                    <p><strong>"Zabawy emocjami":</strong> Zajęcia dla przedszkolaków, gdzie dzieci uczą się rozpoznawać i wyrażać swoje emocje.</p>
+                    <p><strong>Szkolenia dla rodziców:</strong> Porady, jak wspierać rozwój emocjonalny dzieci w domu i jak reagować w sytuacjach trudnych emocjonalnie.</p>
+                </li>
+                <li>
+                    <h3>Współpraca z Instytucjami Edukacyjnymi</h3>
+                    <p><strong>Warsztaty dla nauczycieli:</strong> Szkolenia dotyczące rozpoznawania problemów emocjonalnych u dzieci i odpowiednich reakcji w klasie.</p>
+                    <p><strong>Program wsparcia w przedszkolach:</strong> Pomoc dzieciom w procesie adaptacji i integracji z grupą rówieśniczą.</p>
+                </li>
+                <li>
+                    <h3>Publikacje i Artykuły</h3>
+                    <p><strong>"Jak wspierać dzieci w radzeniu sobie z emocjami":</strong> Artykuł w czasopiśmie psychologicznym dotyczący wsparcia emocjonalnego dla dzieci.</p>
+                    <p><strong>"Lęki u dzieci - jak sobie radzić?":</strong> Poradnik dla rodziców dotyczący pracy z dziećmi zmagającymi się z lękiem.</p>
+                </li>
+                <li>
+                    <h3>Opinie Rodziców</h3>
+                    <p><em>"Dzięki terapii u Pani Aleksandry, nasza córka lepiej radzi sobie w szkole i w kontaktach z rówieśnikami." – Mama Zosi</em></p>
+                    <p><em>"Terapia syna pomogła nam w radzeniu sobie z jego wybuchami złości. Jesteśmy bardzo wdzięczni." – Rodzice Kuby</em></p>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="blog-section" id="blog">
+            <h2>Blog</h2>
+            <p>Moje najnowsze artykuły...</p>
+        </section>
+        
+        <section class="contact-section" id="contact">
+            <h2>Kontakt</h2>
+             <div class="contact-container">
+                <div class="contact-details">
+                    <p>Email: aleksandra.szczygiel777@gmail.com</p>
+                    <p>Telefon: 790-212-428</p>
+                    <p>Adres: ul. Jasna 1, 55-040 Chrzanów</p>
+                </div>
+                
+                <div class="map-container">
+                    <h3>Znajdź nas tutaj:</h3>
+                    <!-- Google Maps iframe -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.639370914509!2d21.01222841579909!3d52.229675979757074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc64f5b760b7%3A0x2c1d8f68469d02eb!2sPa%C5%82ac%20Kultury%20i%20Nauki!5e0!3m2!1spl!2spl!4v1696514965677!5m2!1spl!2spl" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Profil Psychologa</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Pokaż domyślną sekcję przy ładowaniu strony
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('portfolio');  // Portfolio ustawione jako domyślna sekcja
+        });
+    </script>
+</body>
+</html>
